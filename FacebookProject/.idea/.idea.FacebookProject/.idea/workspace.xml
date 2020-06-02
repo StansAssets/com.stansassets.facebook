@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="66df8643-fdd1-44a3-9fc3-d40d645fb97b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../com.stansassets.facebook/Editor/AssemblyInfo.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../com.stansassets.facebook/Runtime/AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PackageSampleProject/Assets/Scenes.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PackageSampleProject/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PackageSampleProject/Assets/Scenes/SampleScene.unity.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PackageSampleProject/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../com.stansassets.package-sample/CHANGELOG.md" beforeDir="false" afterPath="$PROJECT_DIR$/../com.stansassets.facebook/CHANGELOG.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../com.stansassets.package-sample/Editor/AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../com.stansassets.package-sample/Editor/EditorExample.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../com.stansassets.package-sample/Editor/StansAssets.PackageSample.Editor.asmdef" beforeDir="false" afterPath="$PROJECT_DIR$/../com.stansassets.facebook/Editor/StansAssets.Facebook.Editor.asmdef" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../com.stansassets.package-sample/LICENSE.md" beforeDir="false" afterPath="$PROJECT_DIR$/../com.stansassets.facebook/LICENSE.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../com.stansassets.package-sample/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../com.stansassets.facebook/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../com.stansassets.package-sample/Runtime/AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../com.stansassets.package-sample/Runtime/RuntimeExample.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../com.stansassets.package-sample/Runtime/StansAssets.PackageSample.asmdef" beforeDir="false" afterPath="$PROJECT_DIR$/../com.stansassets.facebook/Runtime/StansAssets.Facebook.asmdef" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../com.stansassets.package-sample/Samples/Sample1/SampleExample.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../com.stansassets.package-sample/Samples/StansAssets.PackageSample.Samples.asmdef" beforeDir="false" afterPath="$PROJECT_DIR$/../com.stansassets.facebook/Samples/StansAssets.Facebook.Samples.asmdef" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../com.stansassets.package-sample/Tests/Editor/EditorExampleTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../com.stansassets.facebook/Tests/Editor/EditorExampleTest.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../com.stansassets.package-sample/Tests/Editor/StansAssets.PackageSample.Editor.Tests.asmdef" beforeDir="false" afterPath="$PROJECT_DIR$/../com.stansassets.facebook/Tests/Editor/StansAssets.Facebook.Editor.Tests.asmdef" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../com.stansassets.package-sample/Tests/Runtime/RuntimeExampleTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../com.stansassets.facebook/Tests/Runtime/RuntimeExampleTest.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../com.stansassets.package-sample/Tests/Runtime/StansAssets.PackageSample.Tests.asmdef" beforeDir="false" afterPath="$PROJECT_DIR$/../com.stansassets.facebook/Tests/Runtime/StansAssets.Facebook.Tests.asmdef" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../com.stansassets.package-sample/Third Party Notices.md" beforeDir="false" afterPath="$PROJECT_DIR$/../com.stansassets.facebook/Third Party Notices.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../com.stansassets.package-sample/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../com.stansassets.facebook/package.json" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/../../com.stansassets.foundation/Runtime/Async/Coroutine/CoroutineUtility.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../com.stansassets.foundation/Runtime/Async/Coroutine/GlobalCoroutine.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/301E83EA-5372-4807-97D2-7B44A1D98309/c3/5809477a/HttpMethod.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../com.stansassets.facebook/Runtime/Config/FacebookSettings.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../com.stansassets.facebook/Runtime/Core/FbGraphAPI.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/301E83EA-5372-4807-97D2-7B44A1D98309/af/904f56d3/InitDelegate.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../com.stansassets.facebook/Editor/SA_FB_EditorWindow.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../com.stansassets.facebook/Runtime/Results/FbLoginResult.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../com.stansassets.facebook/Runtime/Models/FbRequestBuilder.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../com.stansassets.facebook/Runtime/Results/FbGraphFriendsListResult.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../com.stansassets.facebook/Runtime/Results/FbGraphResult.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../com.stansassets.facebook/Runtime/Models/FbUser.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../com.stansassets.facebook/Runtime/Core/FB.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../com.stansassets.foundation/Runtime/Web/CachedWebRequest.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../com.stansassets.facebook/Runtime/Enum/FbGender.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../com.stansassets.facebook/Runtime/Utils/FbLoginUtil.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../com.stansassets.scene-management/com.stansassets.scene-management/Editor/Settings/SceneManagementEditorMenu.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../com.stansassets.facebook/Runtime/Utils/FbLoginUtilResult.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../com.stansassets.facebook/Samples/Sample1/SA_FB_UseExample.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../com.stansassets.facebook/Runtime/Enum/FbPermissions.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../com.stansassets.facebook/Runtime/Enum/FbCursorType.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.stansassets.plugins-dev-kit@0.0.3-preview/Runtime/PackageSettings/PackageScriptableSettingsSingleton.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../com.stansassets.facebook/Runtime/Enum/FbProfileImageSize.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../com.stansassets.facebook/Runtime/Results/FbGetUserResult.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../com.stansassets.facebook/Runtime/Results/FbResult.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../com.stansassets.facebook/package.json" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../com.stansassets.facebook/Runtime/Results/FbGetProfileImageUrlResult.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../com.stansassets.facebook/Runtime/Proxy/FbUnity.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/301E83EA-5372-4807-97D2-7B44A1D98309/fe/b4e97bc2/AccessToken.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../com.stansassets.foundation/Runtime/Models/IError.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../com.stansassets.facebook/Runtime/Core/FbAnalytics.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../com.stansassets.foundation/Runtime/Models/IResult.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../com.stansassets.facebook/Runtime/Enum/FbResultState.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../com.stansassets.foundation/Runtime/Utilities/MiniJSON.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/301E83EA-5372-4807-97D2-7B44A1D98309/9b/dc998c9a/IGraphResult.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../com.stansassets.foundation/Runtime/Utilities/TimeUtility.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../com.stansassets.facebook/Editor/SA_FB_EditorMenu.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/301E83EA-5372-4807-97D2-7B44A1D98309/51/7c3776c9/IResult.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../com.stansassets.scene-management/com.stansassets.scene-management/Editor/Configs/SceneManagementPackage.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../com.stansassets.facebook/Runtime/Config/FbPackage.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../com.stansassets.foundation/Runtime/Models/Error.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../com.stansassets.foundation/Runtime/Models/Result.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../com.stansassets.facebook/Editor/StansAssets.Facebook.Editor.asmdef" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../com.stansassets.facebook/Runtime/StansAssets.Facebook.asmdef" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../com.stansassets.scene-management/com.stansassets.scene-management/Editor/Settings/SceneManagementSettings.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/../com.stansassets.facebook/Editor/SA_FB_EditorMenu.cs" />
+        <option value="$PROJECT_DIR$/../com.stansassets.facebook/Editor/SA_FB_EditorWindow.cs" />
+        <option value="$PROJECT_DIR$/../com.stansassets.facebook/Runtime/Proxy/SA_FB_Proxy.cs" />
+        <option value="$PROJECT_DIR$/../com.stansassets.facebook/Runtime/Core/SA_FB.cs" />
+        <option value="$PROJECT_DIR$/../com.stansassets.facebook/Runtime/Core/FbAnalytics.cs" />
+        <option value="$PROJECT_DIR$/../com.stansassets.facebook/Runtime/Core/SA_FB_Settings.cs" />
+        <option value="$PROJECT_DIR$/../com.stansassets.facebook/package.json" />
+        <option value="$PROJECT_DIR$/../../com.stansassets.scene-management/com.stansassets.scene-management/Editor/Configs/SceneManagementPackage.cs" />
+        <option value="$PROJECT_DIR$/../com.stansassets.facebook/Runtime/Config/FacebookPackage.cs" />
+        <option value="$PROJECT_DIR$/../com.stansassets.facebook/Runtime/Core/FbSettings.cs" />
+        <option value="$PROJECT_DIR$/../com.stansassets.facebook/Runtime/Models/SA_FB_Cursor.cs" />
+        <option value="$PROJECT_DIR$/../com.stansassets.facebook/Runtime/Config/FbPackage.cs" />
+        <option value="$PROJECT_DIR$/../com.stansassets.facebook/Runtime/Enum/FbCursorType.cs" />
+        <option value="$PROJECT_DIR$/../com.stansassets.facebook/Runtime/Enum/SA_FB_ErrorCode.cs" />
+        <option value="$PROJECT_DIR$/../com.stansassets.facebook/Runtime/Models/SA_FB_RequestBuilder.cs" />
+        <option value="$PROJECT_DIR$/../com.stansassets.facebook/Runtime/Models/FbRequestBuilder.cs" />
+        <option value="$PROJECT_DIR$/../../com.stansassets.foundation/Runtime/Models/IError.cs" />
+        <option value="$PROJECT_DIR$/../../com.stansassets.foundation/Runtime/Models/Error.cs" />
+        <option value="$PROJECT_DIR$/../../com.stansassets.foundation/Runtime/Models/IResult.cs" />
+        <option value="$PROJECT_DIR$/../../com.stansassets.foundation/Runtime/Models/Result.cs" />
+        <option value="$PROJECT_DIR$/../com.stansassets.facebook/Runtime/Models/SA_FB_User.cs" />
+        <option value="$PROJECT_DIR$/../com.stansassets.facebook/Runtime/Enum/SA_FB_Gender.cs" />
+        <option value="$PROJECT_DIR$/../com.stansassets.facebook/Runtime/Enum/FbGender.cs" />
+        <option value="$PROJECT_DIR$/../../com.stansassets.foundation/Runtime/Web/CachedWebRequest.cs" />
+        <option value="$PROJECT_DIR$/../com.stansassets.facebook/Runtime/Results/SA_FB_Result.cs" />
+        <option value="$PROJECT_DIR$/../com.stansassets.facebook/Runtime/Enum/FbResultState.cs" />
+        <option value="$PROJECT_DIR$/../com.stansassets.facebook/Runtime/Results/SA_FB_GetProfileImageUrlResult.cs" />
+        <option value="$PROJECT_DIR$/../com.stansassets.facebook/Runtime/Results/FbGetProfileImageUrlResult.cs" />
+        <option value="$PROJECT_DIR$/../com.stansassets.facebook/Runtime/Results/FbGetUserResult.cs" />
+        <option value="$PROJECT_DIR$/../com.stansassets.facebook/Runtime/Results/FbGraphFirendsListResult.cs" />
+        <option value="$PROJECT_DIR$/../com.stansassets.facebook/Runtime/Enum/FbPermissions.cs" />
+        <option value="$PROJECT_DIR$/../com.stansassets.facebook/Runtime/Results/SbGraphResult.cs" />
+        <option value="$PROJECT_DIR$/../com.stansassets.facebook/Runtime/Results/FbGraphResult.cs" />
+        <option value="$PROJECT_DIR$/../com.stansassets.facebook/Runtime/Results/FbGraphFriendsListResult.cs" />
+        <option value="$PROJECT_DIR$/../com.stansassets.facebook/Runtime/Models/FbUser.cs" />
+        <option value="$PROJECT_DIR$/../com.stansassets.facebook/Runtime/Utils/SA_FB_LoginUtil.cs" />
+        <option value="$PROJECT_DIR$/../com.stansassets.facebook/Runtime/Results/SA_FB_LoginResult.cs" />
+        <option value="$PROJECT_DIR$/../com.stansassets.facebook/Runtime/Results/FbLoginResult.cs" />
+        <option value="$PROJECT_DIR$/../com.stansassets.facebook/Runtime/Results/FbResult.cs" />
+        <option value="$PROJECT_DIR$/../com.stansassets.facebook/Runtime/Utils/FbLoginUtil.cs" />
+        <option value="$PROJECT_DIR$/../com.stansassets.facebook/Runtime/Utils/SA_FB_LoginUtilResult.cs" />
+        <option value="$PROJECT_DIR$/../com.stansassets.facebook/Runtime/Utils/FbLoginUtilResult.cs" />
+        <option value="$PROJECT_DIR$/../com.stansassets.facebook/Runtime/Proxy/FbUnity.cs" />
+        <option value="$PROJECT_DIR$/../com.stansassets.facebook/Runtime/Core/FB.cs" />
+        <option value="$PROJECT_DIR$/../com.stansassets.facebook/Runtime/Enum/FbProfileImageSize.cs" />
+        <option value="$PROJECT_DIR$/../com.stansassets.facebook/Runtime/Core/FbGraphAPI.cs" />
+        <option value="$PROJECT_DIR$/../com.stansassets.facebook/Runtime/Config/FbSettings.cs" />
+        <option value="$PROJECT_DIR$/../com.stansassets.facebook/Runtime/Config/FacebookSettings.cs" />
+        <option value="$PROJECT_DIR$/../com.stansassets.facebook/Samples/Sample1/SA_FB_UseExample.cs" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1cgZLQRicIBzhOewVAfRzuCO6tw" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="Discover.Launch.Via.Unity" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="TWShift.4" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="nodejs_package_manager_path" value="npm" />
+  </component>
+  <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
+    <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="66df8643-fdd1-44a3-9fc3-d40d645fb97b" name="Default Changelist" comment="" />
+      <created>1590952140888</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1590952140888</updated>
+      <workItem from="1590952142247" duration="16461000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="649" y="223" key="RiderGenerateDialog" timestamp="1590959473392">
+      <screen x="0" y="23" width="1920" height="960" />
+    </state>
+    <state x="649" y="223" key="RiderGenerateDialog/0.23.1920.960/1920.23.1280.777@0.23.1920.960" timestamp="1590959473392" />
+    <state x="623" y="238" width="672" height="626" key="search.everywhere.popup" timestamp="1591052425519">
+      <screen x="0" y="23" width="1920" height="975" />
+    </state>
+    <state x="623" y="256" width="672" height="678" key="search.everywhere.popup/0.23.1920.1057/-1440.203.1440.804@0.23.1920.1057" timestamp="1591015627087" />
+    <state x="623" y="238" width="672" height="626" key="search.everywhere.popup/0.23.1920.975/1920.23.1280.777@0.23.1920.975" timestamp="1591052425519" />
+  </component>
+</project>

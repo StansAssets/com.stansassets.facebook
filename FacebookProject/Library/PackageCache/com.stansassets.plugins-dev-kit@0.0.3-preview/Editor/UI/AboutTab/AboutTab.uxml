@@ -1,0 +1,6 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements">
+    <ui:VisualElement name="window-root" style="flex-grow: 1;&#10;">
+        <Style src="AboutTab.uss" />
+        <ui:Label text="Coming soon..."  />
+    </ui:VisualElement>
+</ui:UXML>
