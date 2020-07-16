@@ -1,17 +1,18 @@
 {
   "name": "com.stansassets.facebook",
   "displayName": "Stans Assets - Facebook",
-  "version": "0.0.1-preview",
+  "version": "1.0.0",
   "unity": "2019.3",
   "description": "Package Sample.",
   "dependencies": {
-    "com.stansassets.foundation": "1.0.4",
+    "com.stansassets.foundation": "1.0.5",
     "com.stansassets.plugins-dev-kit" : "0.0.3-preview"
   },
   "keywords": [
-    "keyword1",
-    "keyword2",
-    "keyword3"
+    "facebook",
+    "utility",
+    "unity",
+    "stansassets"
   ],
   "license": "MIT",
   "author": {
@@ -22,11 +23,11 @@
 
   "homepage": "https://api.stansassets.com/",
   "bugs": {
-    "url": "https://github.com/StansAssets/com.stansassets.foundation/issues",
+    "url": "https://github.com/StansAssets/com.stansassets.facebook/issues",
     "email" : "support@stansassets.com"
   },
   "repository": {
     "type": "git",
-    "url": "ssh://git@github.com:StansAssets/com.stansassets.foundation.git"
+    "url": "ssh://git@github.com:StansAssets/com.stansassets.facebook.git"
   }
 }

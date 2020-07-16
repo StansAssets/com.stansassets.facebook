@@ -2,7 +2,9 @@
     "name": "StansAssets.Facebook.Editor",
     "references": [
         "StansAssets.Facebook",
-        "StansAssets.Foundation"
+        "StansAssets.Foundation",
+        "StansAssets.Foundation.Editor",
+        "StansAssets.Plugins.Editor"
     ],
     "includePlatforms": [
         "Editor"

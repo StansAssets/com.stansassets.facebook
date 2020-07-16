@@ -1,4 +1,4 @@
-namespace SA.Facebook
+namespace StansAssets.Facebook
 {
     /// <summary>
     /// Represents facebook user gender.

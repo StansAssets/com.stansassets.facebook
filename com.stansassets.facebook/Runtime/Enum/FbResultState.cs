@@ -1,4 +1,4 @@
-namespace SA.Facebook
+namespace StansAssets.Facebook
 {
     /// <summary>
     /// Possible states of the facebook API result

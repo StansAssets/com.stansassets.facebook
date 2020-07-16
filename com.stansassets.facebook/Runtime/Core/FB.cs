@@ -1,11 +1,12 @@
 using System;
 using System.Collections.Generic;
 using Facebook.Unity;
+using UnityEngine.Assertions;
 
-namespace SA.Facebook
+namespace StansAssets.Facebook
 {
     // ReSharper disable once InconsistentNaming
-    public static class FB
+    public static class Fb
     {
         static readonly FbGraphAPI s_FbGraphApi = new FbGraphAPI();
         static bool s_IsInitializing;
@@ -66,18 +67,40 @@ namespace SA.Facebook
         }
 
         /// <summary>
-        /// Prompts the user to authorize your application using the Login Dialog appropriate to the platform.
+        /// Prompts the user to authorize your application for publish permissions using the Login Dialog appropriate to the platform.
         /// If the user is already logged in and has authorized your application,
-        /// checks whether all permissions in the permissions parameter have been granted, and if not,
-        /// prompts the user for any that are newly requested.
-        /// Method using scopes that was specified inside Stan's Assets -> SocialPlugin -> Settings Editor
+        /// checks whether all permissions in the permissions parameter have been granted, and if not, prompts the user for any that are newly requested.
         ///
-        /// In the Unity Editor, a stub function is called, which will prompt you to provide an access token
+        /// People are sensitive about granting publish permissions,
+        /// so you should only ask for publish permissions once a person is ready to post something from your app and not during the initial login.
+        ///
+        /// In the Unity Editor, a stub function is called, which will prompt you to provide an access token from the Access Token Tool.
+        /// Please note that this token will not necessarily contain the permissions you specified in FB.Login. To change this token's permissions,
+        /// please use the [Graph API Explorer](https://developers.facebook.com/tools/explorer).
         /// </summary>
-        /// <param name="callback">A delegate that will be called with the result of the Login Dialog </param>
-        public static void Login(Action<FbLoginResult> callback)
+        /// <param name="callback">A delegate that will be called with the result of the Login Dialog.</param>
+        public static void LogInWithPublishPermissions(Action<FbLoginResult> callback)
         {
-            Login(FacebookSettings.Instance.Scopes, callback);
+            Login(FbSettings.PermissionsStringsList, true, callback);
+        }
+
+        /// <summary>
+        /// Prompts the user to authorize your application for publish permissions using the Login Dialog appropriate to the platform.
+        /// If the user is already logged in and has authorized your application,
+        /// checks whether all permissions in the permissions parameter have been granted, and if not, prompts the user for any that are newly requested.
+        ///
+        /// People are sensitive about granting publish permissions,
+        /// so you should only ask for publish permissions once a person is ready to post something from your app and not during the initial login.
+        ///
+        /// In the Unity Editor, a stub function is called, which will prompt you to provide an access token from the Access Token Tool.
+        /// Please note that this token will not necessarily contain the permissions you specified in FB.Login. To change this token's permissions,
+        /// please use the [Graph API Explorer](https://developers.facebook.com/tools/explorer).
+        /// </summary>
+        /// <param name="callback">A delegate that will be called with the result of the Login Dialog.</param>
+        /// <param name="permissions">A list of Facebook permissions requested from the user</param>
+        public static void LogInWithPublishPermissions(IEnumerable<string> permissions, Action<FbLoginResult> callback)
+        {
+            Login(permissions, true, callback);
         }
 
         /// <summary>
@@ -86,20 +109,48 @@ namespace SA.Facebook
         /// checks whether all permissions in the permissions parameter have been granted, and if not,
         /// prompts the user for any that are newly requested.
         ///
-        /// In the Unity Editor, a stub function is called, which will prompt you to provide an access token
+        /// In the Unity Editor, a stub function is called, which will prompt you to provide an access token from the Access Token Tool.
+        /// Please note that this token will not necessarily contain the permissions you specified in FB.Login. To change this token's permissions,
+        /// please use the [Graph API Explorer](https://developers.facebook.com/tools/explorer).
         /// </summary>
-        /// <param name="callback">A delegate that will be called with the result of the Login Dialog </param>
-        /// <param name="scopes">A list of Facebook permissions requested from the user </param>
-        static void Login(List<string> scopes, Action<FbLoginResult> callback)
+        /// <param name="callback">A delegate that will be called with the result of the Login Dialog.</param>
+        public static void LogInWithReadPermissions(Action<FbLoginResult> callback)
         {
-            if (!scopes.Contains(FbPermissions.publish_actions.ToString()))
-                FbUnity.LogInWithReadPermissions(scopes, (loginResult) =>
+            Login(FbSettings.PermissionsStringsList, true, callback);
+        }
+
+        /// <summary>
+        /// Prompts the user to authorize your application using the Login Dialog appropriate to the platform.
+        /// If the user is already logged in and has authorized your application,
+        /// checks whether all permissions in the permissions parameter have been granted, and if not,
+        /// prompts the user for any that are newly requested.
+        ///
+        /// In the Unity Editor, a stub function is called, which will prompt you to provide an access token from the Access Token Tool.
+        /// Please note that this token will not necessarily contain the permissions you specified in FB.Login. To change this token's permissions,
+        /// please use the [Graph API Explorer](https://developers.facebook.com/tools/explorer).
+        /// </summary>
+        /// <param name="callback">A delegate that will be called with the result of the Login Dialog.</param>
+        /// <param name="permissions">A list of Facebook permissions requested from the user</param>
+        public static void LogInWithReadPermissions(IEnumerable<string> permissions, Action<FbLoginResult> callback)
+        {
+            Login(permissions, true, callback);
+        }
+
+        internal static void Login(bool requestPublishPermissions, Action<FbLoginResult> callback)
+        {
+            Login(FbSettings.PermissionsStringsList, requestPublishPermissions, callback);
+        }
+
+        static void Login(IEnumerable<string> permissions, bool requestPublishPermissions, Action<FbLoginResult> callback)
+        {
+            if (!requestPublishPermissions)
+                FbUnity.LogInWithReadPermissions(permissions, (loginResult) =>
                 {
                     var result = new FbLoginResult(loginResult);
                     callback.Invoke(result);
                 });
             else
-                FbUnity.LogInWithPublishPermissions(scopes, (loginResult) =>
+                FbUnity.LogInWithPublishPermissions(permissions, (loginResult) =>
                 {
                     var result = new FbLoginResult(loginResult);
                     callback.Invoke(result);
@@ -140,17 +191,8 @@ namespace SA.Facebook
         // ReSharper disable once InconsistentNaming
         public static void API(string query, HttpMethod method, FacebookDelegate<IGraphResult> callback = null, IDictionary<string, string> formData = null)
         {
-            FbLoginUtil.ConfirmLoginStatus(statusResult =>
-            {
-                if (statusResult.IsSucceeded)
-                {
-                    FbUnity.Api(query, method, callback, formData);
-                }
-                else
-                {
-                    callback?.Invoke(statusResult);
-                }
-            });
+            Assert.IsTrue(IsLoggedIn);
+            FbUnity.Api(query, method, callback, formData);
         }
 
         /// <summary>

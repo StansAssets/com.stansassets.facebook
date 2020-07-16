@@ -1,7 +1,7 @@
 using System.Collections;
 using Facebook.Unity;
 
-namespace SA.Facebook
+namespace StansAssets.Facebook
 {
     public class FbLoginResult : FbResult
     {

@@ -1,6 +1,6 @@
 using UnityEngine;
 using UnityEngine.UI;
-using SA.Facebook;
+using StansAssets.Facebook;
 
 public class SA_FB_UseExample : MonoBehaviour
 {
@@ -26,16 +26,19 @@ public class SA_FB_UseExample : MonoBehaviour
 
         //This can also be done via the settings
         //We need email scope to be able to get user email
-        if (!FbSettings.Scopes.Contains("email")) FbSettings.Scopes.Add("email");
 
-        if (!FbSettings.Scopes.Contains("user_gender")) FbSettings.Scopes.Add("user_gender");
+        FbSettings.Permissions.Clear();
+        if(!FbSettings.Permissions.Contains(FbPermissions.email))
+            FbSettings.Permissions.Add(FbPermissions.email);
 
-        if (!FbSettings.Scopes.Contains("user_location")) FbSettings.Scopes.Add("user_location");
+        if(!FbSettings.Permissions.Contains(FbPermissions.user_location))
+            FbSettings.Permissions.Add(FbPermissions.user_location);
 
-        if (!FbSettings.Scopes.Contains("user_age_range")) FbSettings.Scopes.Add("user_age_range");
-
+        if(!FbSettings.Permissions.Contains(FbPermissions.user_age_range))
+            FbSettings.Permissions.Add(FbPermissions.user_age_range);
+        
         m_Connect.interactable = false;
-        FB.Init(() =>
+        Fb.Init(() =>
         {
             Debug.Log("Init Completed");
             m_Connect.interactable = true;
@@ -45,7 +48,7 @@ public class SA_FB_UseExample : MonoBehaviour
         //let's define button action based on user state
         m_Connect.onClick.AddListener(() =>
         {
-            if (!FB.IsLoggedIn)
+            if (!Fb.IsLoggedIn)
                 SignInFlow();
             else
                 SignOutFlow();
@@ -54,7 +57,7 @@ public class SA_FB_UseExample : MonoBehaviour
 
     void SignInFlow()
     {
-        FB.Login((result) =>
+        Fb.LogInWithPublishPermissions((result) =>
         {
             if (result.IsSucceeded)
             {
@@ -70,18 +73,18 @@ public class SA_FB_UseExample : MonoBehaviour
 
     void SignOutFlow()
     {
-        FB.LogOut();
+        Fb.LogOut();
         UpdateAccountUI();
     }
 
     void UpdateAccountUI()
     {
-        if (FB.IsLoggedIn)
+        if (Fb.IsLoggedIn)
         {
             if (s_CurrentUser != null)
                 SetUserInfoUI(s_CurrentUser);
             else
-                FB.GetLoggedInUserInfo((result) =>
+                Fb.GetLoggedInUserInfo((result) =>
                 {
                     if (result.IsSucceeded)
                     {

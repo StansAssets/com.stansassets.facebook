@@ -1,7 +1,7 @@
 using System;
 using Facebook.Unity;
 
-namespace SA.Facebook
+namespace StansAssets.Facebook
 {
     // ReSharper disable once InconsistentNaming
     public class FbGraphAPI
@@ -23,7 +23,7 @@ namespace SA.Facebook
             request.AddCommand("fields", "first_name,id,last_name,name,link,locale,picture");
             request.AddCursor(fbCursor);
 
-            FB.API(request.RequestString, HttpMethod.GET,
+            Fb.API(request.RequestString, HttpMethod.GET,
                 graphResult =>
                 {
                     var result = new FbGraphFriendsListResult(graphResult);
@@ -34,7 +34,7 @@ namespace SA.Facebook
         internal void GetLoggedInUserInfo(Action<FbGetUserResult> callback)
         {
             var request = new FbRequestBuilder("/me?fields=id,name,first_name,last_name,email,gender,birthday,age_range,location,picture");
-            FB.API(request.RequestString, HttpMethod.GET,
+            Fb.API(request.RequestString, HttpMethod.GET,
                 graphResult =>
                 {
                     var result = new FbGetUserResult(graphResult);
@@ -45,7 +45,7 @@ namespace SA.Facebook
         internal void ResolveProfileImageUrl(string id, FbProfileImageSize size, Action<string> callback)
         {
             var request = new FbRequestBuilder($"/{id}?fields=picture.type({size.ToString().ToLower()})");
-            FB.API(request.RequestString, HttpMethod.GET,
+            Fb.API(request.RequestString, HttpMethod.GET,
                 graphResult =>
                 {
                     var result = new FbGetProfileImageUrlResult(graphResult);

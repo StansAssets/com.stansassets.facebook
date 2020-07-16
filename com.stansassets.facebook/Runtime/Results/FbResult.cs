@@ -3,7 +3,7 @@ using System.Collections;
 using Facebook.Unity;
 using StansAssets.Foundation;
 
-namespace SA.Facebook
+namespace StansAssets.Facebook
 {
     /// <summary>
     /// Facebook API callback result representation.

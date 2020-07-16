@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using StansAssets.Foundation;
 using UnityEngine.Assertions;
 
-namespace SA.Facebook
+namespace StansAssets.Facebook
 {
     /// <summary>
     /// Represents a Facebook user.
@@ -100,7 +100,7 @@ namespace SA.Facebook
                 return;
             }
 
-            FB.FbGraphApi.ResolveProfileImageUrl(Id, size, (url) =>
+            Fb.FbGraphApi.ResolveProfileImageUrl(Id, size, (url) =>
             {
                 m_PicturesUrls.Add(size, url);
                 callback.Invoke(url);

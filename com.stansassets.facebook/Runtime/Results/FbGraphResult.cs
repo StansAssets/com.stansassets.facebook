@@ -3,7 +3,7 @@ using System.Collections;
 using Facebook.Unity;
 using UnityEngine.Assertions;
 
-namespace SA.Facebook
+namespace StansAssets.Facebook
 {
     /// <summary>
     /// Abstract Graph API result class

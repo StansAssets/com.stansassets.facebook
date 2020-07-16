@@ -1,6 +1,6 @@
 using System.Text;
 
-namespace SA.Facebook
+namespace StansAssets.Facebook
 {
     /// <summary>
     /// Facebook Graph API request builder.

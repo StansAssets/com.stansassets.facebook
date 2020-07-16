@@ -1,4 +1,4 @@
-namespace SA.Facebook
+namespace StansAssets.Facebook
 {
     /// <summary>
     /// Type of the Graph API paginated cursor.

@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using Facebook.Unity;
 using UnityEngine.Assertions;
 
-namespace SA.Facebook
+namespace StansAssets.Facebook
 {
     public class FbGraphFriendsListResult : FbGraphResult
     {

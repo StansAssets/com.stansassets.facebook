@@ -1,33 +1,48 @@
 using System;
 using System.Collections.Generic;
 
-namespace SA.Facebook
+namespace StansAssets.Facebook
 {
+    /// <summary>
+    /// Login Utilities methods.
+    /// </summary>
     public static class FbLoginUtil
     {
         static readonly List<Action<FbLoginUtilResult>> s_Callbacks = new List<Action<FbLoginUtilResult>>();
         static bool s_WaitingLoginResult;
+        static bool s_RequestPublishPermissions;
 
-        public static void ConfirmLoginStatus(Action<FbLoginUtilResult> callback)
+        /// <summary>
+        /// This is conflict free method
+        /// (it can be executed from several places in the code and will only result in on facebook login request but all parties will get the result).
+        ///
+        /// The method will call combination of Init and Login methods.
+        /// </summary>
+        /// <param name="requestPublishPermissions">Use `true` if login request should be with publish permissions.</param>
+        /// <param name="callback">Operation callback.</param>
+        ///
+        public static void ConfirmLoginStatus(bool requestPublishPermissions, Action<FbLoginUtilResult> callback)
         {
             s_Callbacks.Add(callback);
-
-            if (FB.IsLoggedIn)
+            if (Fb.IsLoggedIn)
             {
-                DispatchLoginSucceeded();
-                return;
+                if (!requestPublishPermissions || s_RequestPublishPermissions)
+                {
+                    DispatchLoginSucceeded();
+                    return;
+                }
             }
 
             if (s_WaitingLoginResult) return;
 
             s_WaitingLoginResult = true;
-
-            if (FB.IsInitialized)
+            s_RequestPublishPermissions = requestPublishPermissions;
+            if (Fb.IsInitialized)
                 OnInitCompleted();
             else
-                FB.Init(() =>
+                Fb.Init(() =>
                 {
-                    if (FB.IsInitialized)
+                    if (Fb.IsInitialized)
                         OnInitCompleted();
                     else
                         DispatchLoginFailed();
@@ -36,16 +51,22 @@ namespace SA.Facebook
 
         static void OnInitCompleted()
         {
-            if (FB.IsLoggedIn)
+            if (Fb.IsLoggedIn)
                 DispatchLoginSucceeded();
             else
-                FB.Login(result =>
+            {
+                if (s_RequestPublishPermissions)
                 {
-                    if (result.IsSucceeded)
-                        DispatchLoginSucceeded();
-                    else
-                        DispatchLoginFailed();
-                });
+                    Fb.Login(s_RequestPublishPermissions, result =>
+                    {
+                        if (result.IsSucceeded)
+                            DispatchLoginSucceeded();
+                        else
+                            DispatchLoginFailed();
+                    });
+                }
+            }
+
         }
 
         static void DispatchLoginFailed()

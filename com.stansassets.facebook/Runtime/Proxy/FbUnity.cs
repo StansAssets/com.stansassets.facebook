@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using FacebookUnity = Facebook.Unity;
 
-namespace SA.Facebook
+namespace StansAssets.Facebook
 {
     static class FbUnity
     {

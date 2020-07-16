@@ -2,7 +2,7 @@ using System.Collections.Generic;
 using Facebook.Unity;
 using UnityEngine;
 
-namespace SA.Facebook
+namespace StansAssets.Facebook
 {
     public class FbLoginUtilResult : IGraphResult
     {

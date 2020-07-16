@@ -1,11 +1,18 @@
-namespace Config
+namespace StansAssets.Facebook
 {
     /// <summary>
-    ///  Graph API paginated cursor type.
+    /// Facebook package info.
     /// </summary>
     static class FbPackage
     {
-        public const string DisplayName = "Facebook API";
+        /// <summary>
+        /// Package display name.
+        /// </summary>
+        public const string DisplayName = "Facebook";
+
+        /// <summary>
+        /// Package full name (id).
+        /// </summary>
         public const string PackageName = "com.stansassets.facebook";
     }
 }

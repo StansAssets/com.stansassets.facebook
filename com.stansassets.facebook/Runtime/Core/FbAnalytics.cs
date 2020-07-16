@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace SA.Facebook
+namespace StansAssets.Facebook
 {
     public static class FbAnalytics
     {
@@ -22,7 +22,7 @@ namespace SA.Facebook
         /// <param name="parameters">Any parameters needed to describe the event </param>
         public static void LogAppEvent(string logEvent, float? valueToSum = null, Dictionary<string, object> parameters = null)
         {
-            if (!FB.IsInitialized)
+            if (!Fb.IsInitialized)
             {
                 Debug.LogError("SA_FB_Analytics: " + logEvent + " was skipped Facebook SDK not initialized. " +
                     "Make sure you initialized Facebook SDK on your application start.");
@@ -40,7 +40,7 @@ namespace SA.Facebook
         /// <param name="parameters">Any parameters needed to describe the event </param>
         public static void LogPurchase(float logPurchase, string currency = null, Dictionary<string, object> parameters = null)
         {
-            if (!FB.IsInitialized)
+            if (!Fb.IsInitialized)
             {
                 Debug.LogError("SA_FB_Analytics: LogPurchase was skipped Facebook SDK not initialized. " +
                     "Make sure you initialized Facebook SDK on your application start.");
