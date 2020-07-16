@@ -1,4 +1,4 @@
-# Package Sample
+# Extended Facebook SDK 
 <!-- Describe your package -->
 
 [![NPM Package](https://img.shields.io/npm/v/com.stansassets.facebook)](https://www.npmjs.com/package/com.stansassets.facebook)
