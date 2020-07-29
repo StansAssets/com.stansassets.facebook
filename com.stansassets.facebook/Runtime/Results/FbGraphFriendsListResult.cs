@@ -6,12 +6,22 @@ using UnityEngine.Assertions;
 
 namespace StansAssets.Facebook
 {
+    /// <summary>
+    /// Friends request result.
+    /// </summary>
     public class FbGraphFriendsListResult : FbGraphResult
     {
-        public FbGraphFriendsListResult(IGraphResult graphResult)
+        internal FbGraphFriendsListResult(IGraphResult graphResult)
             : base(graphResult) { }
 
+        /// <summary>
+        /// Total Friends count.
+        /// </summary>
         public int TotalFriendsCount { get; private set; }
+
+        /// <summary>
+        /// Received users in batch.
+        /// </summary>
         public List<FbUser> Users { get; } = new List<FbUser>();
 
         protected override void OnDataReady(IDictionary json)

@@ -9,6 +9,10 @@ namespace StansAssets.Facebook
     {
         readonly StringBuilder m_Request;
 
+        /// <summary>
+        /// Create new builder object with request.
+        /// </summary>
+        /// <param name="request">Initial request body. Fro example `/me?fields=friends`.</param>
         public FbRequestBuilder(string request)
         {
             m_Request = new StringBuilder(request);

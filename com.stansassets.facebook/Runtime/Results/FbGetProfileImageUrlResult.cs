@@ -1,11 +1,9 @@
-using System;
 using System.Collections;
 using Facebook.Unity;
-using StansAssets.Foundation;
 
 namespace StansAssets.Facebook
 {
-    public class FbGetProfileImageUrlResult : FbResult
+    class FbGetProfileImageUrlResult : FbResult
     {
         public FbGetProfileImageUrlResult(IResult graphResult)
             : base(graphResult) { }

@@ -15,7 +15,7 @@ namespace StansAssets.Facebook
         /// </summary>
         public string Value { get; }
 
-        public FbCursor(FbCursorType type, string value)
+        internal FbCursor(FbCursorType type, string value)
         {
             Type = type;
             Value = value;

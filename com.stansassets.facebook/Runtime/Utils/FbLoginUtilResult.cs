@@ -9,7 +9,7 @@ namespace StansAssets.Facebook
         readonly string m_Error = string.Empty;
         readonly bool m_IsSucceeded = false;
 
-        public FbLoginUtilResult(bool isSucceeded)
+        internal FbLoginUtilResult(bool isSucceeded)
         {
             m_IsSucceeded = isSucceeded;
             if (!m_IsSucceeded) m_Error = "Operation is requires active session, make sure user is logged in";

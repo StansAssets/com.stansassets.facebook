@@ -157,6 +157,11 @@ namespace StansAssets.Facebook
                 });
         }
 
+        /// <summary>
+        /// Retries current logged user info.
+        /// See <see cref="FbUser"/> for more details.
+        /// </summary>
+        /// <param name="callback"></param>
         public static void GetLoggedInUserInfo(Action<FbGetUserResult> callback)
         {
             FbGraphApi.GetLoggedInUserInfo(callback);

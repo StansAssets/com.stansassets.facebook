@@ -3,9 +3,12 @@ using Facebook.Unity;
 
 namespace StansAssets.Facebook
 {
+    /// <summary>
+    /// Login reasult.
+    /// </summary>
     public class FbLoginResult : FbResult
     {
-        public FbLoginResult(ILoginResult result)
+        internal FbLoginResult(ILoginResult result)
             : base(result)
         {
             if (State == FbResultState.Success)
@@ -15,8 +18,14 @@ namespace StansAssets.Facebook
             }
         }
 
+        /// <summary>
+        /// Logged User Id.
+        /// </summary>
         public string UserId { get; }
 
+        /// <summary>
+        /// User AccessToken.
+        /// </summary>
         public AccessToken AccessToken { get; }
 
         protected override void OnDataReady(IDictionary json)
