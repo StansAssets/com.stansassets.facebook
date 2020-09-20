@@ -1,40 +1,26 @@
 using Rotorz.ReorderableList;
 using UnityEngine;
 using UnityEditor;
-using StansAssets.Facebook;
 using StansAssets.Plugins.Editor;
 
-namespace SA.Facebook
+namespace StansAssets.Facebook.Editor
 {
+    /// <summary>
+    /// Facebook settings editor window.
+    /// </summary>
     public class FbEditorWindow : EditorWindow
     {
-        static Editor s_FacebookSettingsEditor;
+        static UnityEditor.Editor s_FacebookSettingsEditor;
         const string k_MyAppsPageUrl = "https://developers.facebook.com/apps/";
 
         [SerializeField]
         Vector2 m_ScrollPosition;
 
-        void OnEnable()
-        {
-            titleContent = new GUIContent(FbPackage.DisplayName);
-        }
-
-        void OnGUI()
-        {
-            using (new IMGUIBeginScrollView(ref m_ScrollPosition))
-            {
-                DrawSettingsUI();
-            }
-        }
-
-        static void DrawEmptyScopes()
-        {
-            EditorGUILayout.LabelField("Each permission has its own set of requirements and usage that are subject to Facebook Platform Policies " +
-                "and your own privacy policy.", SettingsWindowStyles.MiniLabel);
-        }
-
-        static FbPermissions DrawScopeItem(Rect rect, FbPermissions item) => (FbPermissions)EditorGUI.EnumPopup(rect, item);
-
+        /// <summary>
+        /// In case you need to draw the Facebook settings editor window UI inside
+        /// your Editor interface, you may used this method.
+        /// Please note that method should be called during the OnGUI loop,
+        /// </summary>
         public static void DrawSettingsUI()
         {
             using (new IMGUIBlockWithSpace(new GUIContent("Facebook SDK")))
@@ -57,7 +43,7 @@ namespace SA.Facebook
                 if (s_FacebookSettingsEditor == null)
                 {
                     var facebookSettings = Resources.Load("FacebookSettings") as ScriptableObject;
-                    if (facebookSettings != null) s_FacebookSettingsEditor = Editor.CreateEditor(facebookSettings);
+                    if (facebookSettings != null) s_FacebookSettingsEditor = UnityEditor.Editor.CreateEditor(facebookSettings);
                 }
 
                 if (s_FacebookSettingsEditor == null)
@@ -74,5 +60,26 @@ namespace SA.Facebook
                     EditorUtility.SetDirty(s_FacebookSettingsEditor.target);
             }
         }
+        
+        void OnEnable()
+        {
+            titleContent = new GUIContent(FbPackage.DisplayName);
+        }
+
+        void OnGUI()
+        {
+            using (new IMGUIBeginScrollView(ref m_ScrollPosition))
+            {
+                DrawSettingsUI();
+            }
+        }
+
+        static void DrawEmptyScopes()
+        {
+            EditorGUILayout.LabelField("Each permission has its own set of requirements and usage that are subject to Facebook Platform Policies " +
+                "and your own privacy policy.", SettingsWindowStyles.MiniLabel);
+        }
+
+        static FbPermissions DrawScopeItem(Rect rect, FbPermissions item) => (FbPermissions)EditorGUI.EnumPopup(rect, item);
     }
 }
