@@ -13,7 +13,7 @@ The goal of StansAssets is to make life easier for any developer. Power up your 
 * [Patterns.](https://api.stansassets.com/foundation/StansAssets.Foundation.Patterns.html) Implementation of well-known design patterns like Singleton, Factory, Pool, etc.
 * [UI Toolkit.](https://api.stansassets.com/foundation/StansAssets.Foundation.UIElements.html) Helper methods, extensions, utilities for the new Unity [UI Toolkit framework](https://docs.unity3d.com/Manual/UIElements.html).
 
-[API Reference](https://myapi) | [Forum](https://myforum) | [Wiki](https://github.com/StansAssets/com.stansassets.facebook/wiki)
+[API Reference](https://api.stansassets.com/facebook/) | [Wiki](https://github.com/StansAssets/com.stansassets.facebook/wiki)
 
 ### Install from NPM
 * Navigate to the `Packages` directory of your project.
