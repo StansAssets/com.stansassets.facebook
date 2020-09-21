@@ -1,6 +1,5 @@
 # Extended Facebook SDK 
-Power up your Unity games with our Facebook Unity SDKs.
-The goal of StansAssets is to make life easier for any developer. That is why we are introducing the Extended Facebook SDK. This library is a free open source product that contains extended access to Facebook API.
+The goal of StansAssets is to make life easier for any developer. Power up your Unity games with our Extended Facebook SDK. This library is a free open source product that contains extended access to Facebook API.
 
 [![NPM Package](https://img.shields.io/npm/v/com.stansassets.facebook)](https://www.npmjs.com/package/com.stansassets.facebook)
 [![openupm](https://img.shields.io/npm/v/com.stansassets.facebook?label=openupm&registry_uri=https://package.openupm.com)](https://openupm.com/packages/com.stansassets.facebook/)
