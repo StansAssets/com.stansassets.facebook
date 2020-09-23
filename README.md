@@ -7,11 +7,11 @@ The goal of StansAssets is to make life easier for any developer. Power up your 
 [![Issues](https://img.shields.io/github/issues/StansAssets/com.stansassets.facebook)](https://github.com/StansAssets/com.stansassets.facebook/issues)
 
 ## Detailed articles to explore the library:
-* [Utilities.](https://api.stansassets.com/foundation/StansAssets.Foundation.html) The collection of various utility methods.
-* [Editor Utilities.](https://api.stansassets.com/foundation/StansAssets.Foundation.Editor.html)The collection of utility methods for the Unity Editor.
-* [Extensions.](https://api.stansassets.com/foundation/StansAssets.Foundation.Extensions.html) Extension methods for default C# and Unity Objects.
-* [Patterns.](https://api.stansassets.com/foundation/StansAssets.Foundation.Patterns.html) Implementation of well-known design patterns like Singleton, Factory, Pool, etc.
-* [UI Toolkit.](https://api.stansassets.com/foundation/StansAssets.Foundation.UIElements.html) Helper methods, extensions, utilities for the new Unity [UI Toolkit framework](https://docs.unity3d.com/Manual/UIElements.html).
+* [Initialization](https://github.com/StansAssets/com.stansassets.facebook/wiki/Initialization) Initializes all platform-specific data structures and behaviors.
+* [GetFriends](https://github.com/StansAssets/com.stansassets.facebook/wiki/GetFriends) Represents users friends list.
+* [GetProfileUrl](https://github.com/StansAssets/com.stansassets.facebook/wiki/GetProfileUrl) Gets user's profile url.
+* [GetLoggedInUserInfo](https://github.com/StansAssets/com.stansassets.facebook/wiki/GetLoggedInUserInfo) Retrieves current logger user info.
+* [LogInWithPermissions](https://github.com/StansAssets/com.stansassets.facebook/wiki/LogInWithReadPermissions) Login user with specific permissions.
 
 [API Reference](https://api.stansassets.com/facebook/) | [Wiki](https://github.com/StansAssets/com.stansassets.facebook/wiki)
 
