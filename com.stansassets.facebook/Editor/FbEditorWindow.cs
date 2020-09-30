@@ -37,6 +37,27 @@ namespace StansAssets.Facebook.Editor
                         Application.OpenURL("https://developers.facebook.com/docs/facebook-login/permissions/v2.0");
                 }
             }
+            
+            using (new IMGUIBlockWithSpace(new GUIContent("Documentation")))
+            {
+                using (new IMGUIBeginHorizontal())
+                {
+                    if (GUILayout.Button("Initialization", GUILayout.Width(150)))
+                        Application.OpenURL("https://github.com/StansAssets/com.stansassets.facebook/wiki/Initialization");
+
+                    if (GUILayout.Button("Get Friends", GUILayout.Width(150)))
+                        Application.OpenURL("https://github.com/StansAssets/com.stansassets.facebook/wiki/GetFriends");
+
+                    if (GUILayout.Button("Get Profile Url", GUILayout.Width(150)))
+                        Application.OpenURL("https://github.com/StansAssets/com.stansassets.facebook/wiki/GetProfileUrl");
+                }
+
+                using (new IMGUIBeginHorizontal())
+                {
+                    if (GUILayout.Button("Get User Info", GUILayout.Width(150)))
+                        Application.OpenURL("https://github.com/StansAssets/com.stansassets.facebook/wiki/Get-User-Info");
+                }
+            }
 
             using (new IMGUIBlockWithSpace(new GUIContent("Default SDK Settings")))
             {

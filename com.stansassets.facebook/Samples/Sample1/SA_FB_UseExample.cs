@@ -79,6 +79,11 @@ public class SA_FB_UseExample : MonoBehaviour
 
     void UpdateAccountUI()
     {
+        Fb.GetFriends(10, result =>
+        {
+            Debug.Log($"friends count: {result.Users.Count}");
+        }, null);
+        
         if (Fb.IsLoggedIn)
         {
             if (s_CurrentUser != null)
