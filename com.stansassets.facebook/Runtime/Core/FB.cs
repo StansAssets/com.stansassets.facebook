@@ -199,6 +199,21 @@ namespace StansAssets.Facebook
             Assert.IsTrue(IsLoggedIn);
             FbUnity.Api(query, method, callback, formData);
         }
+        
+        /// <summary>
+        /// This edge allows you to:
+        /// get the User's friends who have installed the app making the query
+        /// get the User's total number of friends (including those who have not installed the app making the query)
+        /// <para>Requires  <b>"user_friends" </b> permission
+        /// <see href="https://developers.facebook.com/docs/graph-api/reference/user/friends"/> for information </para>
+        /// </summary>
+        /// <param name="limit">Result limit </param>
+        /// <param name="callback">Request callback </param>
+        /// <param name="fbCursor">Pagination cursor pointer </param>
+        public static void GetFriends(int limit, Action<FbGraphFriendsListResult> callback, FbCursor cursor)
+        {
+            FbGraphApi.GetFriends(limit, callback, cursor);
+        }
 
         /// <summary>
         /// By logging app activation events, you can observe how frequently users activate your app,

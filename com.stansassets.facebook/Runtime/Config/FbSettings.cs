@@ -1,15 +1,8 @@
 using System.Collections.Generic;
 using System.Linq;
-using StansAssets.Plugins;
 
 namespace StansAssets.Facebook
 {
-    class FacebookAdditiveSettings : PackageScriptableSettingsSingleton<FacebookAdditiveSettings>
-    {
-        public List<FbPermissions> Permissions = new List<FbPermissions>();
-        public override string PackageName => FbPackage.PackageName;
-    }
-
     public static class FbSettings
     {
         /// <summary>

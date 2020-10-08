@@ -5,7 +5,7 @@ namespace StansAssets.Facebook.Editor
 {
     static class FbEditorMenu
     {
-        [MenuItem(PackagesConfigEditor.RootMenu + "/" + FbPackage.DisplayName, false, 500)]
+        [MenuItem(PluginsDevKitPackage.RootMenu + "/" + FbPackage.DisplayName, false, 500)]
         public static void EditSettings()
         {
             EditorWindowUtils.OpenAndDockNextToInspector<FbEditorWindow>();
