@@ -11,7 +11,6 @@ namespace StansAssets.Facebook.Editor
     {
         static UnityEditor.Editor s_FacebookSettingsEditor;
         const string k_MyAppsPageUrl = "https://developers.facebook.com/apps/";
-        
 
         /// <summary>
         /// In case you need to draw the Facebook settings editor window UI inside
@@ -57,7 +56,7 @@ namespace StansAssets.Facebook.Editor
                     EditorUtility.SetDirty(s_FacebookSettingsEditor.target);
             }
         }
-        
+
         static void DrawEmptyScopes()
         {
             EditorGUILayout.LabelField("Each permission has its own set of requirements and usage that are subject to Facebook Platform Policies " +
@@ -65,7 +64,7 @@ namespace StansAssets.Facebook.Editor
         }
 
         static FbPermissions DrawScopeItem(Rect rect, FbPermissions item) => (FbPermissions)EditorGUI.EnumPopup(rect, item);
-   
+
         public override void OnGUI()
         {
             DrawSettingsUI();

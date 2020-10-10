@@ -7,7 +7,7 @@ namespace StansAssets.Facebook.Editor
     class FbDocumentationTab : IMGUILayoutElement
     {
         static IMGUIDocumentationBlock s_DocumentationBlock;
-        
+
         static IMGUIDocumentationBlock DocumentationBlock
         {
             get
@@ -19,6 +19,9 @@ namespace StansAssets.Facebook.Editor
                     s_DocumentationBlock.AddDocumentationUrl("Get User Info", "https://github.com/StansAssets/com.stansassets.facebook/wiki/Get-User-Info");
                     s_DocumentationBlock.AddDocumentationUrl("Get Friends", "https://github.com/StansAssets/com.stansassets.facebook/wiki/GetFriends");
                     s_DocumentationBlock.AddDocumentationUrl("Get Profile Url", "https://github.com/StansAssets/com.stansassets.facebook/wiki/GetProfileUrl");
+                    
+                    s_DocumentationBlock.AddSampleScene("General Sample", $"{FbPackageEditor.SamplesPath}/General/SA_FB_ExampleScene.unity");
+                    
                 }
 
                 return s_DocumentationBlock;
