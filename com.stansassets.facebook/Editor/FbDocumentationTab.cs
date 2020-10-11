@@ -15,6 +15,7 @@ namespace StansAssets.Facebook.Editor
                 if (s_DocumentationBlock == null)
                 {
                     s_DocumentationBlock = new IMGUIDocumentationBlock();
+                    s_DocumentationBlock.AddDocumentationUrl("Home", "https://github.com/StansAssets/com.stansassets.facebook");
                     s_DocumentationBlock.AddDocumentationUrl("Initialization", "https://github.com/StansAssets/com.stansassets.facebook/wiki/Initialization");
                     s_DocumentationBlock.AddDocumentationUrl("Get User Info", "https://github.com/StansAssets/com.stansassets.facebook/wiki/Get-User-Info");
                     s_DocumentationBlock.AddDocumentationUrl("Get Friends", "https://github.com/StansAssets/com.stansassets.facebook/wiki/GetFriends");
