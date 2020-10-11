@@ -2,7 +2,7 @@
   "name": "com.stansassets.facebook",
   "displayName": "Stans Assets - Facebook",
   "version": "1.0.0",
-  "unity": "2019.3",
+  "unity": "2018.4",
   "description": "Power up your Unity games with our Extended Facebook SDK. This library is a free open source product that contains extended access to Facebook API.",
   "dependencies": {
     "com.stansassets.foundation": "1.0.16",
