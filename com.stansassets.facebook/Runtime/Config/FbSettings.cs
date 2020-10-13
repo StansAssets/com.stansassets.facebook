@@ -23,7 +23,7 @@ namespace StansAssets.Facebook
         /// <param name="appId"></param>
         public static void SetAppId(string appId)
         {
-            FbUnity.SetAppId(appId);
+           /* FbUnity.SetAppId(appId);*/
         }
 
         /// <summary>

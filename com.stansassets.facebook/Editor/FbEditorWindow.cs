@@ -1,4 +1,6 @@
+using StansAssets.Foundation.Editor;
 using StansAssets.Plugins.Editor;
+using UnityEditor;
 using UnityEngine;
 
 namespace StansAssets.Facebook.Editor
@@ -11,10 +13,11 @@ namespace StansAssets.Facebook.Editor
         public const string WikiHomeUrl = "https://github.com/StansAssets/com.stansassets.facebook/wiki";
         
         static IMGUIDocumentationBlock s_DocumentationBlock;
+       
         
         protected override void OnAwake()
         {
-            titleContent = new GUIContent(FbPackage.DisplayName);
+            titleContent = new GUIContent(FbPackage.DisplayName, (EditorGUIUtility.isProSkin)? EditorAssets.GetImage($"{FbPackageEditor.CoversPath}/logo-dark.png") :  EditorAssets.GetImage($"{FbPackageEditor.CoversPath}/logo-light.png"));
             SetPackageName(FbPackage.PackageName);
             SetDocumentationUrl(WikiHomeUrl);
             
