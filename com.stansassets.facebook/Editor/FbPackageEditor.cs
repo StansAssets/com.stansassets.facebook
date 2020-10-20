@@ -6,5 +6,6 @@ namespace StansAssets.Facebook.Editor
     {
         public static readonly string RootPath = PackageManagerUtility.GetPackageRootPath(FbPackage.PackageName);
         public static readonly string SamplesPath = $"{RootPath}/Samples";
+        public static readonly string CoversPath = $"{RootPath}/Art/Covers";
     }
 }
