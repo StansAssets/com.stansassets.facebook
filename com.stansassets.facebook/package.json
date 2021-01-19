@@ -6,7 +6,7 @@
   "description": "Power up your Unity games with our Extended Facebook SDK. This library is a free open source product that contains extended access to Facebook API.",
   "dependencies": {
     "com.stansassets.foundation": "1.0.18",
-    "com.stansassets.plugins-dev-kit" : "1.0.1"
+    "com.stansassets.plugins-dev-kit" : "1.0.2"
   },
   "keywords": [
     "facebook",
