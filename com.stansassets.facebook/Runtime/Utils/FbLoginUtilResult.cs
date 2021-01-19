@@ -6,18 +6,17 @@ namespace StansAssets.Facebook
 {
     public class FbLoginUtilResult : IGraphResult
     {
-        readonly string m_Error = string.Empty;
-        readonly bool m_IsSucceeded = false;
-
         internal FbLoginUtilResult(bool isSucceeded)
         {
-            m_IsSucceeded = isSucceeded;
-            if (!m_IsSucceeded) m_Error = "Operation is requires active session, make sure user is logged in";
+            IsSucceeded = isSucceeded;
+            if (!IsSucceeded) Error = "Operation is requires active session, make sure user is logged in";
         }
 
-        public bool IsSucceeded => m_IsSucceeded;
+        public bool IsSucceeded { get; } = false;
 
-        public string Error => m_Error;
+        public string Error { get; } = string.Empty;
+
+        public IDictionary<string, string> ErrorDictionary => new Dictionary<string, string>();
 
         public IDictionary<string, object> ResultDictionary => new Dictionary<string, object>();
 
