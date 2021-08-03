@@ -116,7 +116,7 @@ namespace StansAssets.Facebook
         /// <param name="callback">A delegate that will be called with the result of the Login Dialog.</param>
         public static void LogInWithReadPermissions(Action<FbLoginResult> callback)
         {
-            Login(FbSettings.PermissionsStringsList, true, callback);
+            Login(FbSettings.PermissionsStringsList, false, callback);
         }
 
         /// <summary>
@@ -133,7 +133,7 @@ namespace StansAssets.Facebook
         /// <param name="permissions">A list of Facebook permissions requested from the user</param>
         public static void LogInWithReadPermissions(IEnumerable<string> permissions, Action<FbLoginResult> callback)
         {
-            Login(permissions, true, callback);
+            Login(permissions, false, callback);
         }
 
         internal static void Login(bool requestPublishPermissions, Action<FbLoginResult> callback)
